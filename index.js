@@ -1,9 +1,10 @@
+// Get references to HTML elements
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
 const favoritesButton = document.getElementById('favorites-button');
 
-
+// Define the OMDB API key and base URL
 const apiKey = "http://www.omdbapi.com/?apikey=88b64dee"; 
 const apiUrl = `https://www.omdbapi.com/?apikey=88b64dee`;
 favoritesButton.addEventListener('click', () => {
@@ -12,6 +13,7 @@ favoritesButton.addEventListener('click', () => {
 
 movieSearchBox.addEventListener('input', findMovies);
 
+// Function to load movies based on search term
 async function loadMovies(searchTerm) {
     const URL = `${apiUrl}&s=${searchTerm}&page=1`;
     const res = await fetch(URL);
