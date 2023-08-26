@@ -1,0 +1,295 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style for the main search bar */
+#search-bar{
+    margin-left:10vw;
+    display:flex;
+    align-items: center;
+  }
+
+/* Styling for the IMDb logo */
+  #search-bar h1 {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f4c518;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #0f0101ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* IMDb logo style in the header */
+#search-bar1 h1 {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f4c518;
+}
+
+/* Styling for the "Back" navigation link */
+nav h1 {
+    font-size: 20px;
+    color: #f4c518;
+}
+
+/* Styling for the navigation link */
+nav a {
+    text-decoration: none;
+    color: #f4c518;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect for navigation link */
+nav a:hover {
+    color: #f0a500;
+}
+
+/* Styling for the search input box */
+.form-control {
+    margin-left: 20px;
+  height:30px;
+  width:700px;
+  border-radius: 5px;
+  margin-right: 20px;
+} 
+
+/* Styling for the "My Favorite Movies" button */
+#favorites-button {
+    background-color: #f4c518;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    height:30px;
+}
+
+/* Styling for the section heading "My Favorite Movies" */
+#favorite-movies h2 {
+    color: #d31d1d;
+   margin-left:45%;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Styling for a favorite movie list item */
+.favorite-list-item { 
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(234, 15, 15, 0.952);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for the favorite list grid */
+#favorite-list
+{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-gap: 20px;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+/* Hover effect for a favorite movie list item */
+.favorite-list-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the thumbnail image in a favorite movie list item */
+.favorite-item-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    position: relative; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the movie title */
+.movie-title {
+    color: #070000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styling for the Remove button */
+.remove-button {
+    background-color: #f4c518;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for the Remove button */
+.remove-button:hover {
+    background-color: #f0a500;
+}
+
+/* Hover effect for the "My Favorite Movies" button */
+#favorites-button:hover {
+    background-color: #f0a500;
+}
+
+/* Styling for the movie suggestions grid */
+.movie-suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for a movie suggestion item */
+.movie-suggestion-item {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hover effect for a movie suggestion item */
+.movie-suggestion-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the thumbnail image in a movie suggestion item */
+.movie-suggestion-item .search-item-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the movie poster section */
+.movie-poster{
+    /* background-color: #1a1a1a; */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hover effect for the movie poster section */
+.movie-poster:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the movie poster thumbnail image */
+.movie-poster .movie-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-poster h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.movie-poster p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #b0b0b0;
+}
+
+.favorite-button {
+    /* background-color: transparent; */
+    border: none;
+    color: #f4c518;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.2s ease-in-out;
+}
+
+.favorite-button:hover {
+    color: #f0a500;
+}
+
+/* Styling for the movie title within the movie info section */
+.movie-info {
+    text-align: center;
+}
+
+/* Style the movie title */
+.movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the genre */
+.genre {
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+.writer {
+    font-size: 16px;
+    margin-top: 10px;
+  
+}
+
+/* Style the actors */
+.actors {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Style the plot */
+.plot {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Style the language */
+.language {
+    font-size: 16px;
+    margin-top: 10px;
+   
+}
+
+/* Style the awards */
+.awards {
+    font-size: 16px;
+    margin-top: 10px;
+  
+}

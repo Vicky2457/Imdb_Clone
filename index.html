@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link to the Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="static/IMDB.jpeg" type="image/x-icon">
+    <!-- Link to the external stylesheet "style.css" -->
+    <link rel="stylesheet" href="style.css">
+     <!-- Set the title of the web page -->
+    <title>Mini IMDb Clone</title>
+</head>
+<body>
+     <!-- Header section with IMDb title and search bar -->
+    <div id="search-bar">
+        <h1 id="search-bar">IMDb</h1>
+        <form id="search-form">
+            <!-- Input box for movie search -->
+            <input type="text" id="movie-search-box" class="form-control" placeholder="Search for movies...">
+        </form>
+            <!-- Button to view favorite movies -->
+            <button id="favorites-button">My Favourite Movies</button>
+    </div>
+     <!-- Container for search results -->
+    <div id="search-list" ></div>
+     <!-- Container for detailed movie information -->
+    <div id="result-grid"></div>
+        <!-- Section for displaying favorite movies -->
+    <section id="favorite-movies">
+    <ul id="favorite-list"></ul>
+    </section>
+    <!-- Link to the JavaScript file "index.js" -->
+    <script src="index.js"></script>
+</body>
+</html>
