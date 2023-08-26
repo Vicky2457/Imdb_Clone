@@ -22,7 +22,7 @@ IMDb Clone is a user-friendly web application that allows you to explore movies,
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/yourusername/imdb-clone.git`
+1. Clone the repository: `git clone https://github.com/Vicky2457/Imdb_Clone.git`
 2. Navigate to the project directory: `cd imdb-clone`
 3. Open the `index.html` file in your web browser.
 
